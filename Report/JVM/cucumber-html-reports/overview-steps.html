@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html>
+<head>
+  
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery.tablesorter.min.js"></script>
+<script src="js/Chart.min.js"></script>
+<script src="js/moment.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css"/>
+<link rel="stylesheet" href="css/cucumber.css" type="text/css"/>
+<link rel="stylesheet" href="css/font-awesome.min.css"/>
+<link rel="shortcut icon" href="images/favicon.png"/>
+
+<script>
+$(document).ready(function() {
+    // this will tell tablesorter to try looking for the data-value attribute
+    // if present, it'll sort by that instead
+    // otherwise, it'll sort by the text content of the table cell
+    $("#tablesorter").tablesorter({
+        textAttribute: 'data-value',
+        // ignores the first row of the header, the 'scenario', 'steps', since
+        // sorting those doesn't make sense
+        selectorHeaders: '> thead tr:not(.dont-sort) th',
+        // use a stable sort
+        sortStable: true
+    });
+});
+</script>
+
+
+
+
+
+
+
+
+
+
+  
+<title>Cucumber Reports  - Steps Overview</title>
+
+</head>
+<body>
+
+<nav class="navbar navbar-default navbar-fixed-top" id="navigation">
+  <div class="container-fluid">
+    <div class="collapse navbar-collapse">
+      <p class="navbar-text navbar-left">Cucumber Report</p>
+      <ul class="nav navbar-nav navbar-right">
+                <li role="presentation" ><a href="overview-features.html">Features</a></li>
+        <li role="presentation" ><a href="overview-tags.html">Tags</a></li>
+        <li role="presentation"     class="active" ><a href="overview-steps.html">Steps</a></li>
+                <li role="presentation" ><a href="overview-failures.html">Failures</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<div class="container-fluid">
+  <div class="col-md-5 col-md-offset-1">
+    
+<table class="table table-bordered" id="build-info">
+  <thead>
+    <tr>
+      <th>Project</th>
+            <th>Date</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="info">
+      <td>Facebook</td>
+            <td>17 Apr 2024, 22:27</td>
+    </tr>
+  </tbody>
+</table>
+
+  </div>
+  <div class="col-md-3 col-md-offset-2">
+      </div>
+</div>
+
+
+<div id="report-lead" class="container-fluid">
+  <div class="col-md-10 col-md-offset-1">
+    <h2>Steps Statistics</h2>
+          <p>The following graph shows step statistics for this build. Below list is based on results.
+ step does not provide information about result then is not listed below.
+ Additionally @Before and @After are not counted because they are part of the scenarios, not steps.</p>
+      </div>
+</div>
+
+<div class="container-fluid" id="report">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <table id="tablesorter" class="stats-table table-hover">
+
+        <thead>
+          <tr class="header">
+            <th>Implementation</th>
+            <th>Occurrences</th>
+            <th>Average duration</th>
+            <th>Max duration</th>
+            <th>Total durations</th>
+            <th>Ratio</th>
+          </tr>
+        </thead>
+
+        <tbody>
+                      <tr>
+              <td class="location">FacebookLogStep.toClickTheLoginButton()</td>
+              <td>3</td>
+              <td class="duration" data-value="164037366">0.164</td>
+              <td class="duration" data-value="164037366">0.188</td>
+              <td class="duration" data-value="492112100">0.492</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">FacebookLogStep.toCloseTheBrowser()</td>
+              <td>3</td>
+              <td class="duration" data-value="982200">0.000</td>
+              <td class="duration" data-value="982200">0.001</td>
+              <td class="duration" data-value="2946600">0.002</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">FacebookLogStep.userHaveToPassThePasswordData(String)</td>
+              <td>3</td>
+              <td class="duration" data-value="392549133">0.392</td>
+              <td class="duration" data-value="392549133">0.554</td>
+              <td class="duration" data-value="1177647400">1.177</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">FacebookLogStep.userHaveToPassTheUsernameData(String)</td>
+              <td>3</td>
+              <td class="duration" data-value="247811633">0.247</td>
+              <td class="duration" data-value="247811633">0.376</td>
+              <td class="duration" data-value="743434900">0.743</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">FacebookStep.clickTheSignUpButton()</td>
+              <td>1</td>
+              <td class="duration" data-value="131233300">0.131</td>
+              <td class="duration" data-value="131233300">0.131</td>
+              <td class="duration" data-value="131233300">0.131</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">FacebookStep.closeTheBrowser()</td>
+              <td>1</td>
+              <td class="duration" data-value="1066100">0.001</td>
+              <td class="duration" data-value="1066100">0.001</td>
+              <td class="duration" data-value="1066100">0.001</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">FacebookStep.toOpenFacebookThroughChrome()</td>
+              <td>4</td>
+              <td class="duration" data-value="2225058300">2.225</td>
+              <td class="duration" data-value="2225058300">2.554</td>
+              <td class="duration" data-value="8900233200">8.900</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">FacebookStep.toUserHaveToEnterThePassword(DataTable)</td>
+              <td>1</td>
+              <td class="duration" data-value="176497300">0.176</td>
+              <td class="duration" data-value="176497300">0.176</td>
+              <td class="duration" data-value="176497300">0.176</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">FacebookStep.toUserHaveToPassTheLastName(DataTable)</td>
+              <td>1</td>
+              <td class="duration" data-value="342247300">0.342</td>
+              <td class="duration" data-value="342247300">0.342</td>
+              <td class="duration" data-value="342247300">0.342</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">FacebookStep.toUserHaveToPassTheMobileNumber(DataTable)</td>
+              <td>1</td>
+              <td class="duration" data-value="192600200">0.192</td>
+              <td class="duration" data-value="192600200">0.192</td>
+              <td class="duration" data-value="192600200">0.192</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">FacebookStep.userHaveToClickCreateNewAccountButton()</td>
+              <td>1</td>
+              <td class="duration" data-value="256111300">0.256</td>
+              <td class="duration" data-value="256111300">0.256</td>
+              <td class="duration" data-value="256111300">0.256</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">FacebookStep.userHaveToClickTheGenderOption()</td>
+              <td>1</td>
+              <td class="duration" data-value="166547000">0.166</td>
+              <td class="duration" data-value="166547000">0.166</td>
+              <td class="duration" data-value="166547000">0.166</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">FacebookStep.userHaveToEnterBirthdayDate()</td>
+              <td>1</td>
+              <td class="duration" data-value="412691400">0.412</td>
+              <td class="duration" data-value="412691400">0.412</td>
+              <td class="duration" data-value="412691400">0.412</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">FacebookStep.userHaveToEnterBirthdayMonth()</td>
+              <td>1</td>
+              <td class="duration" data-value="354061100">0.354</td>
+              <td class="duration" data-value="354061100">0.354</td>
+              <td class="duration" data-value="354061100">0.354</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">FacebookStep.userHaveToEnterBirthdayYear()</td>
+              <td>1</td>
+              <td class="duration" data-value="319463200">0.319</td>
+              <td class="duration" data-value="319463200">0.319</td>
+              <td class="duration" data-value="319463200">0.319</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">FacebookStep.userHaveToPassTheFirstName(DataTable)</td>
+              <td>1</td>
+              <td class="duration" data-value="1074367800">1.074</td>
+              <td class="duration" data-value="1074367800">1.074</td>
+              <td class="duration" data-value="1074367800">1.074</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">Hooks.close()</td>
+              <td>4</td>
+              <td class="duration" data-value="408086450">0.408</td>
+              <td class="duration" data-value="408086450">0.478</td>
+              <td class="duration" data-value="1632345800">1.632</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">Hooks.open()</td>
+              <td>4</td>
+              <td class="duration" data-value="2656896950">2.656</td>
+              <td class="duration" data-value="2656896950">3.838</td>
+              <td class="duration" data-value="10627587800">10.627</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                  </tbody>
+
+        <tfoot class="total">
+          <tr>
+            <td>18</td>
+            <td>35</td>
+            <td class="duration">0.771</td>
+            <td class="duration">10.627</td>
+            <td class="duration">27.003</td>
+            <td>Totals</td>
+          </tr>
+        </tfoot>
+
+      </table>
+    </div>
+  </div>
+</div>
+
+
+<nav class="navbar navbar-default" id="footer">
+  <div class="container-fluid">
+    <p class="navbar-text navbar-right">
+        <small>generate Cucumber HTML reports via:&nbsp;</small>
+        <a class="navbar-link" href="https://github.com/jenkinsci/cucumber-reports-plugin">Jenkins Plugin</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-reporting">Standalone</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-sandwich">Sandwich</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/maven-cucumber-reporting">Maven</a>
+        &nbsp;&nbsp;
+    </p>
+  </div>
+</nav>
+
+</body>
+</html>

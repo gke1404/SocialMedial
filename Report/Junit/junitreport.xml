@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="4" time="27.162151">
+    <testcase classname="" name="_2" time="10.415781">
+        <system-out>
+            <![CDATA[Given To Open Facebook through Chrome.......................................passed
+When User have to click create new account button...........................passed
+And User have to pass the first name........................................passed
+And To user have to pass the last name......................................passed
+And To user have to pass the mobile number..................................passed
+And To user have to enter the password......................................passed
+And user have to enter birthday date........................................passed
+And user have to enter birthday month.......................................passed
+And user have to enter birthday year........................................passed
+And User have to click the gender  option...................................passed
+And click the sign up button................................................passed
+Then Close the browser......................................................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="" name="_2" time="5.324128">
+        <system-out>
+            <![CDATA[Given To Open Facebook through Chrome.......................................passed
+When User have to pass the username "Gk" data...............................passed
+And User have to pass the password "123@gk" data............................passed
+And To click the login button...............................................passed
+Then to close the browser...................................................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="" name="_3" time="6.094191">
+        <system-out>
+            <![CDATA[Given To Open Facebook through Chrome.......................................passed
+When User have to pass the username "gke" data..............................passed
+And User have to pass the password "@gk!123" data...........................passed
+And To click the login button...............................................passed
+Then to close the browser...................................................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="" name="_4" time="5.328051">
+        <system-out>
+            <![CDATA[Given To Open Facebook through Chrome.......................................passed
+When User have to pass the username "@ela" data.............................passed
+And User have to pass the password "gke0912" data...........................passed
+And To click the login button...............................................passed
+Then to close the browser...................................................passed
+]]>
+        </system-out>
+    </testcase>
+</testsuite>

@@ -1,0 +1,634 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2024-04-17T16:57:05.172Z",
+        "before": [
+          {
+            "result": {
+              "duration": 3838774600,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.open()"
+            }
+          }
+        ],
+        "line": 5,
+        "name": "",
+        "description": "    To passing the values using datatable for facebook Create New Account function",
+        "id": ";",
+        "after": [
+          {
+            "result": {
+              "duration": 478656900,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.close()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 2554231900,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "To Open Facebook through Chrome",
+            "match": {
+              "location": "FacebookStep.toOpenFacebookThroughChrome()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 256111300,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "User have to click create new account button",
+            "match": {
+              "location": "FacebookStep.userHaveToClickCreateNewAccountButton()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1074367800,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "User have to pass the first name",
+            "match": {
+              "location": "FacebookStep.userHaveToPassTheFirstName(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "GK",
+                  "Ela",
+                  "GKE",
+                  "GKS"
+                ]
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 342247300,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "To user have to pass the last name",
+            "match": {
+              "location": "FacebookStep.toUserHaveToPassTheLastName(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "no1",
+                  "GK"
+                ]
+              },
+              {
+                "cells": [
+                  "no2",
+                  "MSDVJ"
+                ]
+              },
+              {
+                "cells": [
+                  "no3",
+                  "GKE"
+                ]
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 192600200,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "To user have to pass the mobile number",
+            "match": {
+              "location": "FacebookStep.toUserHaveToPassTheMobileNumber(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "mob1",
+                  "mob2",
+                  "mob3",
+                  "mob4"
+                ]
+              },
+              {
+                "cells": [
+                  "8253910526",
+                  "7124639764",
+                  "9876542342",
+                  "8932485523"
+                ]
+              },
+              {
+                "cells": [
+                  "1234987652",
+                  "9010080100",
+                  "8010030111",
+                  "9001090100"
+                ]
+              },
+              {
+                "cells": [
+                  "6363773736",
+                  "9875430954",
+                  "7010070100",
+                  "8989598985"
+                ]
+              },
+              {
+                "cells": [
+                  "8010080100",
+                  "9876541234",
+                  "7878784537",
+                  "9090900909"
+                ]
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 176497300,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "To user have to enter the password",
+            "match": {
+              "location": "FacebookStep.toUserHaveToEnterThePassword(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "8010080100",
+                  "9876541234",
+                  "7878784537",
+                  "9090900909"
+                ]
+              },
+              {
+                "cells": [
+                  "6363773736",
+                  "9875430954",
+                  "7010070100",
+                  "8989598985"
+                ]
+              },
+              {
+                "cells": [
+                  "8010080100",
+                  "9876541234",
+                  "7878784537",
+                  "9090900909"
+                ]
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 412691400,
+              "status": "passed"
+            },
+            "line": 26,
+            "name": "user have to enter birthday date",
+            "match": {
+              "location": "FacebookStep.userHaveToEnterBirthdayDate()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 354061100,
+              "status": "passed"
+            },
+            "line": 27,
+            "name": "user have to enter birthday month",
+            "match": {
+              "location": "FacebookStep.userHaveToEnterBirthdayMonth()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 319463200,
+              "status": "passed"
+            },
+            "line": 28,
+            "name": "user have to enter birthday year",
+            "match": {
+              "location": "FacebookStep.userHaveToEnterBirthdayYear()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 166547000,
+              "status": "passed"
+            },
+            "line": 29,
+            "name": "User have to click the gender  option",
+            "match": {
+              "location": "FacebookStep.userHaveToClickTheGenderOption()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 131233300,
+              "status": "passed"
+            },
+            "line": 30,
+            "name": "click the sign up button",
+            "match": {
+              "location": "FacebookStep.clickTheSignUpButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1066100,
+              "status": "passed"
+            },
+            "line": 31,
+            "name": "Close the browser",
+            "match": {
+              "location": "FacebookStep.closeTheBrowser()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@smoke"
+          }
+        ]
+      }
+    ],
+    "name": "",
+    "description": "  To validating Create New Account Function of Facebook Application",
+    "id": "",
+    "keyword": "Feature",
+    "uri": "file:CreateAccount.feature",
+    "tags": []
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2024-04-17T16:57:15.600Z",
+        "before": [
+          {
+            "result": {
+              "duration": 2489859000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.open()"
+            }
+          }
+        ],
+        "line": 17,
+        "name": "",
+        "description": "    To passing the values using Example tag for login function",
+        "id": ";;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 330359500,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.close()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 1984243700,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "To Open Facebook through Chrome",
+            "match": {
+              "location": "FacebookStep.toOpenFacebookThroughChrome()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 126767000,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "User have to pass the username \"Gk\" data",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Gk\"",
+                  "offset": 31
+                }
+              ],
+              "location": "FacebookLogStep.userHaveToPassTheUsernameData(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 179796400,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "User have to pass the password \"123@gk\" data",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"123@gk\"",
+                  "offset": 31
+                }
+              ],
+              "location": "FacebookLogStep.userHaveToPassThePasswordData(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 188169400,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "To click the login button",
+            "match": {
+              "location": "FacebookLogStep.toClickTheLoginButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 916300,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "to close the browser",
+            "match": {
+              "location": "FacebookLogStep.toCloseTheBrowser()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@sanity"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2024-04-17T16:57:20.926Z",
+        "before": [
+          {
+            "result": {
+              "duration": 2190500200,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.open()"
+            }
+          }
+        ],
+        "line": 18,
+        "name": "",
+        "description": "    To passing the values using Example tag for login function",
+        "id": ";;;3",
+        "after": [
+          {
+            "result": {
+              "duration": 391086600,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.close()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 2422388900,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "To Open Facebook through Chrome",
+            "match": {
+              "location": "FacebookStep.toOpenFacebookThroughChrome()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 376950200,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "User have to pass the username \"gke\" data",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"gke\"",
+                  "offset": 31
+                }
+              ],
+              "location": "FacebookLogStep.userHaveToPassTheUsernameData(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 554721000,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "User have to pass the password \"@gk!123\" data",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"@gk!123\"",
+                  "offset": 31
+                }
+              ],
+              "location": "FacebookLogStep.userHaveToPassThePasswordData(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 146709900,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "To click the login button",
+            "match": {
+              "location": "FacebookLogStep.toClickTheLoginButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1091600,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "to close the browser",
+            "match": {
+              "location": "FacebookLogStep.toCloseTheBrowser()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@sanity"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2024-04-17T16:57:27.022Z",
+        "before": [
+          {
+            "result": {
+              "duration": 2108454000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.open()"
+            }
+          }
+        ],
+        "line": 19,
+        "name": "",
+        "description": "    To passing the values using Example tag for login function",
+        "id": ";;;4",
+        "after": [
+          {
+            "result": {
+              "duration": 432242800,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.close()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 1939368700,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "To Open Facebook through Chrome",
+            "match": {
+              "location": "FacebookStep.toOpenFacebookThroughChrome()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 239717700,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "User have to pass the username \"@ela\" data",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"@ela\"",
+                  "offset": 31
+                }
+              ],
+              "location": "FacebookLogStep.userHaveToPassTheUsernameData(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 443130000,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "User have to pass the password \"gke0912\" data",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"gke0912\"",
+                  "offset": 31
+                }
+              ],
+              "location": "FacebookLogStep.userHaveToPassThePasswordData(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 157232800,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "To click the login button",
+            "match": {
+              "location": "FacebookLogStep.toClickTheLoginButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 938700,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "to close the browser",
+            "match": {
+              "location": "FacebookLogStep.toCloseTheBrowser()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@sanity"
+          }
+        ]
+      }
+    ],
+    "name": "",
+    "description": "  To validating the Login Function of Facebook",
+    "id": "",
+    "keyword": "Feature",
+    "uri": "file:Login.feature",
+    "tags": []
+  }
+]
