@@ -10,14 +10,17 @@ public class SdStep extends SdMet{
 
 	
 	@Given("Open the Snapdeal website")
-	public void openTheSnapdealWebsite() {
+	public void openTheSnapdealWebsite() throws InterruptedException {
 	
+		Thread.sleep(2000);
 		openBrow();
-		getURl("https://www.myntra.com/");
+		getURl("https://www.amazon.com/");
 	}
 
 	@Given("Enter the productnaem and hit the searchbox")
 	public void enterTheProductnaemAndHitTheSearchbox() {
+		
+		System.out.println("hi");
 		
 	}
 
